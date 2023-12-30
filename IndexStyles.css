@@ -816,7 +816,6 @@
                             transform: translateZ(1px);
                             transition: .5s ease-out;
                         }
-                        .contact .contact-container form .submit-button
 @media screen and (min-width: 1000px) {
     .hero .hero-container .arrows {
         position: absolute;
