@@ -33,7 +33,7 @@ html {
     position: fixed;
     z-index: 2;
     display: block;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(1px);
 }
 .navigation {
     width: 100vw;
@@ -43,10 +43,6 @@ html {
     justify-content: center;
     background-color: #171717;
     border-bottom: #f48c06 solid 1px;
-    box-shadow: 0 5px 10px black;
-    position: fixed;
-    top: 0;
-    z-index: 3;
 }
     .navigation .navigation-container {
         width: 100%;
@@ -167,7 +163,7 @@ html {
     background-color: #171717;
     border-right: solid 1px #f48c06;
     box-shadow: 10px 0 10px black;
-    transform: translateX(-75vw);
+    transform: translateX(-100vw);
     transition: .3s;
     overflow: hidden;
 }
