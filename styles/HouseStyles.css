@@ -22,6 +22,14 @@ html {
     background: linear-gradient(to bottom, transparent, #f48c06, #f48c06, transparent);
 }
 
+.background-blur {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: block;
+    backdrop-filter: blur(50px);
+}
 .navigation {
     width: 100vw;
     height: 90px;
@@ -31,6 +39,9 @@ html {
     background-color: #171717;
     border-bottom: #f48c06 solid 1px;
     box-shadow: 0 5px 10px black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
     .navigation .navigation-container {
         width: 100%;
@@ -92,3 +103,54 @@ html {
                 .navigation .navigation-container .nav-buttons .nav-options .option:hover {
                     color: #f48c06;
                 }
+.drop-down {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #171717;
+    border-right: solid 1px #f48c06;
+    box-shadow: 10px 0 10px black;
+    transform: translateX(-65vw);
+    transition: .3s;
+    overflow: hidden;
+}
+    .drop-down .drop-down-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 10px 0 10px;
+    }
+        .drop-down .drop-down-container .social-links {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+            .drop-down .drop-down-container .social-links a {
+                height: 100%;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .drop-down .drop-down-container .social-links a .icon {
+                    height: 100%;
+                    aspect-ratio: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    .drop-down .drop-down-container .social-links a .icon svg {
+                        height: 100%;
+                        width: 100%;
+                    }
