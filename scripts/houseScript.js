@@ -8,7 +8,7 @@ dropButton.addEventListener('click', () => {
         dropDown.style.transform = 'translateX(0)';
         blurBack.style.display = 'block';
     } else {
-        dropDown.style.transform = 'translateX(-65vw)';
+        dropDown.style.transform = 'translateX(-75vw)';
         blurBack.style.display = 'none';
     }
 });
@@ -17,7 +17,7 @@ function outDropMenuClick(event) {
     const isClickInsideNavigation = navigation.contains(event.target);
     if (!isClickInsideDropMenu && !isClickInsideNavigation && dropButton.classList.contains('is-active')) {
         dropButton.classList.remove('is-active');
-        dropDown.style.transform = 'translateX(-65vw)';
+        dropDown.style.transform = 'translateX(-75vw)';
         blurBack.style.display = 'none';
     }
 }
