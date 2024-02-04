@@ -22,6 +22,11 @@ html {
     background: linear-gradient(to bottom, transparent, #f48c06, #f48c06, transparent);
 }
 
+@font-face {
+    font-family: Lato-bold;
+    src: url(/assets/fonts/Lato/Lato-Bold.ttf);
+}
+
 .background-blur {
     width: 100vw;
     height: 100vh;
@@ -86,25 +91,71 @@ html {
                 justify-content: center;
             }
             .navigation .navigation-container .nav-buttons .nav-options {
-                width: auto;
+                width: 100%;
                 height: 100%;
                 display: none;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-evenly;
-                column-gap: 10px;
+                justify-content: space-between;
+                padding: 0 30px;
             }
-                .navigation .navigation-container .nav-buttons .nav-options .option {
-                    color: white;
-                    text-decoration: none;
-                    font-family: sans-serif;
-                    transition: .1s;
+                .navigation .navigation-container .nav-buttons .nav-options .main-links {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    column-gap: 10px;
                 }
-                .navigation .navigation-container .nav-buttons .nav-options .option:hover {
-                    color: #f48c06;
+                    .navigation .navigation-container .nav-buttons .nav-options .main-links .option {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: white;
+                        text-decoration: none;
+                        font-family: Lato-bold;
+                        font-size: 22px;
+                        transition: .1s;
+                    }
+                    .navigation .navigation-container .nav-buttons .nav-options .main-links .option:hover {
+                        color: #f48c06;
+                    }
+                .navigation .navigation-container .nav-buttons .nav-options .social-links {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    column-gap: 20px;
                 }
+                    .navigation .navigation-container .nav-buttons .nav-options .social-links .option {
+                        width: auto;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                        .navigation .navigation-container .nav-buttons .nav-options .social-links .option .icon {
+                            height: 50%;
+                            aspect-ratio: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                            .navigation .navigation-container .nav-buttons .nav-options .social-links .option .icon svg {
+                                height: 100%;
+                            }
+                                .navigation .navigation-container .nav-buttons .nav-options .social-links .option .icon svg path {
+                                    transition: .1s;
+                                }
+                                .navigation .navigation-container .nav-buttons .nav-options .social-links .option:hover .icon svg path {
+                                    fill: #f48c06;
+                                }
 .drop-down {
-    width: 60vw;
+    width: 70vw;
+    min-width: 450px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -116,7 +167,7 @@ html {
     background-color: #171717;
     border-right: solid 1px #f48c06;
     box-shadow: 10px 0 10px black;
-    transform: translateX(-65vw);
+    transform: translateX(-75vw);
     transition: .3s;
     overflow: hidden;
 }
@@ -154,3 +205,41 @@ html {
                         height: 100%;
                         width: 100%;
                     }
+                        .drop-down .drop-down-container .social-links a .icon svg path {
+                            transition: .1s;
+                        }
+                    .drop-down .drop-down-container .social-links a:hover .icon svg path {
+                        fill: #f48c06;
+                    }
+        .drop-down .drop-down-container .nav-options {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+            .drop-down .drop-down-container .nav-options .option {
+                color: white;
+                text-decoration: none;
+                font-size: 40px;
+                font-family: Lato-bold;
+                transition: .1s;
+            }
+            .drop-down .drop-down-container .nav-options .option:hover {
+                color: #f48c06;
+            }
+@media screen and (min-width: 900px) {
+    .background-blur {
+        display: none;
+    }
+    .navigation .navigation-container .nav-buttons {
+        width: 100%;
+    }
+    .navigation .navigation-container .nav-buttons .drop-button {
+        display: none;
+    }
+    .navigation .navigation-container .nav-buttons .nav-options {
+        display: flex;
+    }
+}
