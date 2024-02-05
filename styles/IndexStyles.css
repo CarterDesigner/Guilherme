@@ -118,7 +118,7 @@
                 }
         .cta-1 .cta1-container .profile-img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,5 +128,12 @@
                 height: 100%;
             }
                 .cta-1 .cta1-container .profile-img .img canvas {
-                    height: 800px;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
                 }
+@media screen and (min-width: 900px) {
+    .cta1-container {
+        flex-direction: row;
+    }
+}
