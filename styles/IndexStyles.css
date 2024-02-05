@@ -1,6 +1,6 @@
 .hero {
     width: 100vw;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@
                 }
 .cta-1 {
     width: 100vw;
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,6 +132,68 @@
                     width: 100%;
                     display: block;
                 }
+.cta-2 {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px #f48c06;
+}
+    .cta2-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .cta-2 .cta2-container .cta2-title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .cta-2 .cta2-container .cta2-title span {
+                color: white;
+                font-family: Lato-bold;
+                font-size: 28px;
+                margin: 20px 0;
+            }
+        .cta-2 .cta2-container .cta2-video {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .cta-2 .cta2-container .cta2-video .video {
+                aspect-ratio: 16/9;
+                width: 90%;
+                max-width: 650px;
+                border: solid 1.5px #f48c06
+            }
+.portfolio {
+    width: 100vw;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px #f48c06;
+}
+    .portfolio-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .portfolio .portfolio-container .portfolio-grid {
+            width: 95%;
+            min-height: 500px;
+            display: grid;
+        }
 @media screen and (min-width: 900px) {
     .cta1-container {
         flex-direction: row;
