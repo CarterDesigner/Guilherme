@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: solid 2px #f48c06;
+    border-bottom: solid 1px #f48c06;
 }
     .cta1-container {
         width: 100%;
@@ -97,6 +97,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                user-select: none;
             }
                 .cta-1 .cta1-container .cta-text .text-line span {
                     color: white;
@@ -118,7 +119,7 @@
                 }
         .cta-1 .cta1-container .profile-img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,5 +129,26 @@
                 height: 100%;
             }
                 .cta-1 .cta1-container .profile-img .img canvas {
-                    height: 800px;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
                 }
+.test {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .test .test-container {
+        width: 100%;
+        height: 100%;
+    }
+@media screen and (min-width: 900px) {
+    .cta-1 {
+        height: 80vh;
+    }
+    .cta1-container {
+        flex-direction: row;
+    }
+}
