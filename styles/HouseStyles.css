@@ -85,6 +85,9 @@ html {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: absolute;
+                right: 15px;
+                z-index: 5;
             }
             .navigation .navigation-container .nav-buttons .nav-options {
                 width: 100%;
@@ -225,6 +228,56 @@ html {
             .drop-down .drop-down-container .nav-options .option:hover {
                 color: #f48c06;
             }
+.cta-btn {
+    width: auto;
+    min-width: 180px;
+    height: auto;
+    display: block;
+    margin: 20px;
+}
+    .cta-btn a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f48c06;
+        padding: 12px 20px;
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: Lato-bold;
+        transition: .3s;
+        user-select: none;
+    }
+    .cta-btn a:hover {
+        background-color: white;
+        color: black;
+    }
+.cta-btn2 {
+    width: 100px;
+    min-width: 180px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+    .cta-btn2 a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f48c06;
+        padding: 12px 20px;
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: Lato-bold;
+        transition: .3s;
+        user-select: none;
+    }
+    .cta-btn2 a:hover {
+        background-color: white;
+        color: black;
+    }
 @media screen and (min-width: 900px) {
     .background-blur {
         display: none;
