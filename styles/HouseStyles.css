@@ -24,7 +24,7 @@ html {
 
 @font-face {
     font-family: Lato-bold;
-    src: url(/assets/fonts/Lato/Lato-Bold.ttf);
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
 }
 
 .background-blur {
